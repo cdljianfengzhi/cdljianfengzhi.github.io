@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>风致的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="风致的博客">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="风致的博客">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="风致">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="风致的博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/assets/ww.jpg">
@@ -158,50 +158,94 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-第一次比赛" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/01/hello-world/">Hello World</a>
+      <a class="article-title" href="/2020/04/01/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AF%94%E8%B5%9B/">第一次比赛（上）</a>
     </h1>
   
 
         
-        <a href="/2020/04/01/hello-world/" class="archive-article-date">
-  	<time datetime="2020-04-01T04:05:36.630Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
+        <a href="/2020/04/01/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AF%94%E8%B5%9B/" class="archive-article-date">
+  	<time datetime="2020-04-01T11:58:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <p><img src="/images/2019_04_21_%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AF%94%E8%B5%9B.jpg" alt></p>
+<p>时间:2019.04.20 —— 2019.04.24</p>
+<p>地点：广东省 韶关市</p>
+<h1 id="备赛"><a href="#备赛" class="headerlink" title="备赛"></a>备赛</h1><p>大一有幸参加了系里的机器人团队认识了很多有趣的人也学到了很多知识。<br>老师通知比赛是在大一学期末，但真正准备是在大一第二学期了。当时会的也少（当然现在也很少。。。）万幸的是老师把张老板（学长）空降到了我和周某人的队伍，所以备赛技术支持上还是没有顾虑的。</p>
+<h2 id="附周某人个性照"><a href="#附周某人个性照" class="headerlink" title="附周某人个性照"></a>附周某人个性照</h2><p><img src="/images/IMG_20190415_131008.jpg" alt="(附周某人个性照)"></p>
+<p>备赛正好赶上学校运动会所以整天闷在实验室调机器参数（我的运动会。。。）调的头疼。那时做梦都会梦见调参数。<br>程序用的是利用C语言for循环，循环窄足的一个完整步伐以实现完整步行。核心代码如下：</p>
+<pre><code> for(i=0;i&lt;20;i++)      //侧身1
+{     
+    position[2]--;
+    if (i%2==0)
+    position[5]--;
+    PWM_8();
+    low_level_500u(v);
+}  
+    for(i=0;i&lt;10;i++)      //侧身1
+{     
+    position[2]++;
+    if (i%2==0)
+     position[5]--;
+     PWM_8();
+    low_level_500u(v);
+}  
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+ // while(key);
+ for(i=0;i&lt;40;i++)      //z半步 2
+ {                 
+    position[1]++;
+    position[4]++;
+      position[0]++;
+    position[3]++;
+    if(i%8==0)
+    {
+    position[0]++;
+    position[3]++;
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+    }
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+      PWM_8();
+    low_level_500u(v);
+ }
+
+ // while(key);
+     for(i=0;i&lt;15;i++)    //平3
+{       
+    position[5]++; 
+        if (i%2==0)
+    position[2]++; 
+         if (i%8==0)
+    position[2]++;                             
+    PWM_8();
+    low_level_500u(v);
+
+ }</code></pre><h2 id="程序复位"><a href="#程序复位" class="headerlink" title="程序复位"></a>程序复位</h2><p><img src="/images/IMG_20190316_155758.jpg" alt="(准备)"></p>
+<h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p><img src="/images/IMG_20190316_155016.jpg" alt="(第一步)"><br>秃头调参（小声逼逼）</p>
+<h1 id="出发"><a href="#出发" class="headerlink" title="出发"></a>出发</h1><h2 id="襄阳中转"><a href="#襄阳中转" class="headerlink" title="襄阳中转"></a>襄阳中转</h2><p><img src="/images/IMG_20190420_175111.jpg" alt="(襄阳中转)"></p>
+<h2 id="苦闷的痴情人"><a href="#苦闷的痴情人" class="headerlink" title="苦闷的痴情人"></a>苦闷的痴情人</h2><p><img src="/images/IMG_20190420_215305.jpg" alt="(苦闷的痴情人)"><br>和妹子骚聊实现没调查的结果</p>
+<h2 id="早起"><a href="#早起" class="headerlink" title="早起"></a>早起</h2><p><img src="/images/IMG_20190421_061526.jpg" alt="(早起)"><br>睡得不怎么好，时醒时睡。</p>
+<h2 id="异乡的晨"><a href="#异乡的晨" class="headerlink" title="异乡的晨"></a>异乡的晨</h2><p><img src="/images/IMG_20190421_082554.jpg" alt="(异乡的晨)"><br>南方真的是时雨时晴</p>
+<h2 id="晨间哲思（想通了）"><a href="#晨间哲思（想通了）" class="headerlink" title="晨间哲思（想通了）"></a>晨间哲思（想通了）</h2><p><img src="/images/IMG_20190421_084704.jpg" alt="(想通了)"><br>好兄弟为了你头上的绿色我待给你拍一张（偷笑🤭）</p>
+<h2 id="角落里的光"><a href="#角落里的光" class="headerlink" title="角落里的光"></a>角落里的光</h2><p><img src="/images/IMG_20190421_084740.jpg" alt="(角落里的光)"></p>
+<h2 id="到达！！！"><a href="#到达！！！" class="headerlink" title="到达！！！"></a>到达！！！</h2><p><img src="/images/IMG_20190421_160222.jpg" alt="(到达)"><br>一下火车马上感受到了传说中的“回南天”，真的潮热，火车涵洞里的味道和北方澡堂桑拿房里的味道一模一样。因为接送的车接满才走空调也不开，所以我们分成两拨，一拨坐上刚满的车先出发，另一波搭公交出发。而我就跟随张老板出发搭公交。（车上老人说的广东话真的听不懂😳）找了半天终于和第一波汇合。</p>
 
       
 
       
     </div>
     <div class="article-info article-info-index">
-      
-        <div class="article-pop-out tagcloud">
-          <i class="icon-tuding"></i>
-          <a class="article-tag-list-link color3">置顶</a>
-        </div>
       
       
 	<div class="article-tag tagcloud">
@@ -219,134 +263,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/01/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-实验" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/01/%E5%AE%9E%E9%AA%8C/">第一次比赛</a>
-    </h1>
-  
-
-        
-        <a href="/2020/04/01/%E5%AE%9E%E9%AA%8C/" class="archive-article-date">
-  	<time datetime="2020-04-01T08:51:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/images/2019_04_21_%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AF%94%E8%B5%9B.jpg" alt="(可以写关于图片的描述)"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/01/%E5%AE%9E%E9%AA%8C/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-第一篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/01/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">第一篇博客</a>
-    </h1>
-  
-
-        
-        <a href="/2020/04/01/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2020-04-01T06:48:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="我的第一篇博客"><a href="#我的第一篇博客" class="headerlink" title="我的第一篇博客"></a>我的第一篇博客</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>第二段落</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=28828076&auto=0&height=66"></iframe>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/01/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/04/01/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AF%94%E8%B5%9B/">展开全文 >></a>
         </p>
       
 
